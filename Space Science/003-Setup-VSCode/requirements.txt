@@ -1,0 +1,12 @@
+# Numerics and Science
+numpy
+scipy
+
+# Notebook environment
+jupyterlab
+
+# Plotting
+matplotlib
+
+spiceypy
+spicepy
