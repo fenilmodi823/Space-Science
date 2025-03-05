@@ -1,12 +1,15 @@
+# SPICE
+spiceypy
+
+# Interactive Shell
+ipython
+
+# Jupyterlab
+jupyterlab
+
 # Numerics and Science
 numpy
-scipy
-
-# Notebook environment
-jupyterlab
+pandas
 
 # Plotting
 matplotlib
-
-spiceypy
-spicepy
