@@ -1,5 +1,5 @@
 # Get a Pyhton image
-FROM python:3.9-buster
+FROM python:3.13-buster
 
 # Set some meta information
 LABEL description="Remote Containers for tutorials"
@@ -13,4 +13,3 @@ RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 # Set the Pythonpath and working directory
 ENV PYTHONPATH "/"
-WORKDIR /workspace
