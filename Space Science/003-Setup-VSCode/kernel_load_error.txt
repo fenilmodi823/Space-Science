@@ -1,0 +1,19 @@
+# Clear any previously loaded kernels
+spiceypy.kclear()
+
+# Load kernels via meta file
+spiceypy.furnsh('kernel_meta.txt')
+print("Meta Kernel Loaded:", spiceypy.ktotal("ALL"))
+
+# Manually load kernels (in correct order)
+spiceypy.furnsh('../kernels/lsk/naif0012.tls')  # Leap Seconds
+spiceypy.furnsh('../kernels/spk/de432s.bsp')    # Ephemeris Data
+spiceypy.furnsh('../kernels/pck/pck00010.tpc')  # Planet Constants
+
+# Verify total loaded kernels
+print("Total Kernels Loaded:", spiceypy.ktotal("ALL"))
+
+LOAD THIS INTSEAD OF
+
+# Load the SPICE kernels via a meta file
+spiceypy.furnsh('kernel_meta.txt')
