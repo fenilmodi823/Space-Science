@@ -17,3 +17,20 @@ LOAD THIS INTSEAD OF
 
 # Load the SPICE kernels via a meta file
 spiceypy.furnsh('kernel_meta.txt')
+
+
+or load this:
+use kernels actual path from kernel.txt file
+
+kernels = [
+    '../kernels/spk/de432s.bsp',
+    '../kernels/spk/codes_300ast_20100725.bsp',
+    '../kernels/misc/codes_300ast_20100725.tf',
+    '../kernels/lsk/naif0012.tls',
+    '../kernels/pck/gm_de431.tpc'
+]
+
+for kernel in kernels:
+    spiceypy.furnsh(kernel)
+
+print("Total Kernels Loaded:", spiceypy.ktotal("ALL"))
