@@ -22,6 +22,9 @@ spiceypy.furnsh('kernel_meta.txt')
 or load this:
 use kernels actual path from kernel.txt file
 
+# Clear any previously loaded kernels
+spiceypy.kclear()
+
 kernels = [
     '../kernels/spk/de432s.bsp',
     '../kernels/spk/codes_300ast_20100725.bsp',
