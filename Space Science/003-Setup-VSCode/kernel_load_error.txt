@@ -25,6 +25,7 @@ use kernels actual path from kernel.txt file
 # Clear any previously loaded kernels
 spiceypy.kclear()
 
+# Load the SPICE kernel meta file
 kernels = [
     '../kernels/spk/de432s.bsp',
     '../kernels/spk/codes_300ast_20100725.bsp',
